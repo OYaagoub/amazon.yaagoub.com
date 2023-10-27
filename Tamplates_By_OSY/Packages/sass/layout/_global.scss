@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: JosefinSans-VariableFont;
+
+}
+@font-face {
+    font-family: JosefinSans-VariableFont;
+    src: url(/Tamplates_By_OSY/fonts/JosefinSans/JosefinSans-VariableFont_wght.ttf);
+  }
+  @font-face {
+    font-family: JosefinSans-Italic-VariableFont;
+    src: url(/../../../fonts/JosefinSans/JosefinSans-Italic-VariableFont_wght.ttf);
+  }
+  @font-face {
+    font-family: JosefinSans-bold;
+    src: url(./../../../fonts/JosefinSans/static/JosefinSans-bold.ttf);
+
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  /* Hide any scrollbar track or thumb */
+  ::-webkit-scrollbar-track {
+    display: none;
+  }
+  ::-webkit-scrollbar-thumb {
+    display: none;
+  }
