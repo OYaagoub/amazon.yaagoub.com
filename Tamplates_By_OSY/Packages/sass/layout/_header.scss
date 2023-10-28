@@ -92,7 +92,7 @@ header{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                max-height: max-content;
+                
                 @include media("large"){
                     width:100%;
                     
@@ -160,6 +160,7 @@ header{
                                 position: absolute;
                                 top:39px;
                                 background: #ff9800;
+                                
                                 width: max-content;
                                 padding: 10px;
                                 border-top-right-radius: 10px;
@@ -205,6 +206,10 @@ header{
                                     
                                     color: rgba($color : white, $alpha: .7);
                                 }
+                            }
+                            img{
+                                position: relative;
+                                visibility: hidden;
                             }
                             ul{
                                 display: block;

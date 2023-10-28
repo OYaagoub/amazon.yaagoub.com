@@ -15,8 +15,8 @@ args = parser.parse_args()
 
 # Specify the command you want to run
 command = [
-    'pug ./Packages/pug/pages -o ./Packages/dist/pages -w -P',
-    'pug ./Packages/pug/main.pug -w -P',
+    ' pug ./Packages/pug/pages -o ./Packages/dist/pages -w -P',
+    ' pug ./Packages/pug/main.pug -w -P',
     'code --install-extension glenn2223.live-sass',
     'git clone --depth 1 --filter=blob:none https://github.com/OYaagoub/OSY.git {0}'
 ]

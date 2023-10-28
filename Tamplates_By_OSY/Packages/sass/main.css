@@ -127,8 +127,6 @@ header nav #body .left {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-height: -moz-max-content;
-  max-height: max-content;
 }
 @media screen and (max-width: 993px) {
   header nav #body .left {
@@ -245,6 +243,10 @@ header nav #body .left div ul.global li:hover p {
   header nav #body .left div ul.global li:hover p {
     color: rgba(255, 255, 255, 0.7);
   }
+}
+header nav #body .left div ul.global li:hover img {
+  position: relative;
+  visibility: hidden;
 }
 header nav #body .left div ul.global li:hover ul {
   display: block;
