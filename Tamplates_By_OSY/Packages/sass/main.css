@@ -30,6 +30,10 @@
   display: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -139,7 +143,7 @@ header nav #body .left div {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  height: 80px;
+  height: 90px;
 }
 @media screen and (max-width: 993px) {
   header nav #body .left div {
@@ -206,6 +210,7 @@ header nav #body .left div ul.global li ul {
   position: absolute;
   top: 39px;
   background: #ff9800;
+  z-index: 4;
   width: -moz-max-content;
   width: max-content;
   padding: 10px;
@@ -263,7 +268,7 @@ header nav #body .left div ul.global li:hover ul {
 }
 header nav #body .right {
   width: 20%;
-  height: 80px;
+  height: 90px;
 }
 @media screen and (max-width: 993px) {
   header nav #body .right {
@@ -283,5 +288,174 @@ header nav #body .right img {
   header nav #body .right img {
     width: 60%;
     padding: 10px;
+  }
+}
+
+footer {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+footer #topfooter {
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #261C3A;
+  padding: 70px 0px;
+}
+@media screen and (max-width: 993px) {
+  footer #topfooter {
+    flex-direction: column;
+    padding: 30px 0px;
+  }
+}
+footer #topfooter div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 993px) {
+  footer #topfooter div {
+    width: 100%;
+    margin: 20px 0px;
+  }
+}
+footer #topfooter div h3 {
+  color: white;
+  margin-bottom: 20px;
+  opacity: 0.75;
+  font-size: 15px;
+}
+@media screen and (max-width: 993px) {
+  footer #topfooter div h3 {
+    opacity: 1;
+  }
+}
+footer #topfooter div ul {
+  list-style-type: none;
+  margin-left: 15px;
+}
+@media screen and (max-width: 993px) {
+  footer #topfooter div ul {
+    margin-left: 0px;
+  }
+}
+footer #topfooter div ul li {
+  padding: 5px;
+}
+footer #topfooter div ul li a {
+  opacity: 0.75;
+  color: white;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+footer #topfooter div ul li a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+footer #topfooter div ul img {
+  width: 35px;
+  margin-bottom: 20px;
+}
+footer #topfooter div ul.social {
+  display: flex;
+  flex-direction: row;
+}
+footer #topfooter div.social h3 {
+  opacity: 1;
+  margin-bottom: 20px;
+}
+footer #topfooter div.social select {
+  padding: 10px 30px;
+  border-radius: 29px;
+}
+footer #buttomfooter {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background: black;
+  padding-bottom: 70px;
+  position: relative;
+}
+@media screen and (max-width: 993px) {
+  footer #buttomfooter {
+    flex-direction: column;
+  }
+}
+footer #buttomfooter div {
+  width: 40%;
+}
+@media screen and (max-width: 993px) {
+  footer #buttomfooter div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+footer #buttomfooter div span {
+  color: white;
+}
+footer #buttomfooter div a {
+  color: white;
+  opacity: 0.55;
+  text-decoration: none;
+  align-items: center;
+  font-size: 15px;
+}
+footer #buttomfooter div a img {
+  width: 45px;
+}
+footer #buttomfooter div .client {
+  display: flex;
+  align-self: center;
+  background-color: white;
+  padding: 5px 20px;
+  border-radius: 30px;
+}
+footer #buttomfooter div .client span {
+  color: black;
+  text-transform: capitalize;
+}
+footer #buttomfooter div .client img {
+  margin-right: 10px;
+}
+footer #buttomfooter div a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+footer #buttomfooter .cli {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer #buttomfooter .copy {
+  position: absolute;
+  color: white;
+  opacity: 0.3;
+  bottom: 15px;
+  right: 40px;
+  font-size: 15px;
+}
+@media screen and (max-width: 993px) {
+  footer #buttomfooter .copy {
+    position: relative;
+    text-align: center;
+    margin: 20px 0px;
+    margin-left: 60px;
   }
 }/*# sourceMappingURL=main.css.map */

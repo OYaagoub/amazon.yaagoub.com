@@ -1,0 +1,169 @@
+@import '../abstracts/_mixins.scss' ;
+
+footer{
+    width: 100%;
+    height: max-content;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    #topfooter{
+        
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #261C3A;
+        padding: 70px 0px;
+        @include media("large"){
+            flex-direction: column;
+            padding: 30px 0px;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 20%;
+            justify-content: center;
+            margin-bottom: 50px;
+            @include media("large"){
+                width: 100%;
+                margin: 20px 0px;
+            }
+            h3{
+                color:white ;
+                margin-bottom: 20px;
+                opacity: .75;
+                font-size: 15px;
+                @include media("large"){
+                    opacity: 1;
+                }
+            }
+            ul{
+                list-style-type: none;
+                margin-left: 15px;
+                @include media("large"){
+                    margin-left: 0px;
+                }
+                li{
+                    padding:5px;
+                    a{
+                        opacity: .75;
+                        color:white ;
+                        
+                        text-transform: capitalize;
+                        text-decoration: none;
+                        
+                    }
+                    a:hover{
+                        opacity: 1;
+                        text-decoration: underline;
+                    }
+                }
+                img{
+                    width: 35px;
+                    margin-bottom: 20px;
+                }
+            }
+            ul.social{
+                display: flex;
+                flex-direction: row;
+            }
+
+        }
+        div.social{
+            h3{
+                opacity: 1;
+                margin-bottom: 20px;
+                
+            }
+            select{
+                padding: 10px 30px;
+                border-radius: 29px;
+            }
+        }
+    }
+    #buttomfooter{
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        background: black;
+        padding-bottom: 70px;
+        position: relative;
+        @include media("large"){
+            flex-direction: column;
+        }
+        div{
+            width: 40%;
+            @include media("large"){
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            span{
+                color: white;
+            }
+            a{
+                color: white;
+                opacity: .55;
+                text-decoration: none;
+                align-items: center;
+                font-size: 15px;
+                
+                img{
+                    width: 45px;
+                    
+
+                }
+
+            }
+            .client{
+                display: flex;
+                align-self: center;
+                background-color: white;
+                padding: 5px 20px;
+                border-radius: 30px;
+                span{
+
+                    color: black;
+                    text-transform: capitalize;
+                }
+                img{
+                    margin-right: 10px;
+                }
+
+            }
+            a:hover{
+                opacity: 1;
+                text-decoration: underline;
+            }
+        }
+        .cli{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .copy{
+            position: absolute;
+            color: white;
+            opacity: .3;
+            bottom: 15px;
+            right: 40px;
+            font-size: 15px;
+            @include media("large"){
+                position: relative;
+                text-align: center;
+                margin: 20px 0px;
+                margin-left: 60px;
+                
+            }
+        }
+    }
+}
