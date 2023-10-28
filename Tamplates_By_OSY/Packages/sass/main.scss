@@ -15,8 +15,10 @@
 @use 'layout/grid';
 @use 'layout/header';
 @use 'layout/footer';
+@use 'layout/searchbox';
 @use 'layout/sidebar';
 @use 'layout/forms';
+
 //modules imports
 @use 'modules/buttons';
 @use 'modules/carousel';
